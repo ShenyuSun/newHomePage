@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>	    
+  <head>
+    <title>TestSite</title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700" />
+	  	<link rel="stylesheet" href="normalize.css" />
+      <link rel="stylesheet" href="main.css" />
+  </head>
+	<body>
+		<header class="header">
+		<div class="container">
+			<p class="logo">Hello My name is Shen!</p>
+		</div>
+		</header>
+		<main class="content">
+			<div class="container">
+				<header class="subheader">
+					<h1>Welcome To My Play Ground</h1>
+					<p>All the little project that I built. <a class="js-add-link" href="#">Add a link now!</a></p>
+					<form class="form js-form">
+						<label class="form-label" for="form-link-input">Add a story:</label>
+						<input class="form-input" type="text" id="form-link-input" />
+					</form>
+				</header>
+
+				<div class='modal js-modal'>
+          <div class='modal-media'>
+            <img src='Shen-Yu_Sun.jpg' alt='' />
+            <h3 class='modal-media-title'>Shen-Yu Sun</h3>
+          </div>
+          <div class='modal-content'>
+            <h3>About Me</h3>
+            <p>I love to learn new things, and try new things. I may be slow at the beginning, but that's not
+             gonna stop me :D </p>
+          </div>
+        </div>
+        <div class='modal-overlay js-modal-overlay'></div>		
+
+
+				<ol class="sites">
+					<li class="newsite-item">
+						<a class="newsite-link" href="http://shenyusun.com/websites/CookSomething/index.html">Website 3 - Cook Something!</a>
+						<ul class="newsite-meta">
+							<li class="newsite-meta-item">
+								<em>Made by:</em>
+								<a class="js-show-modal" href="#">Shen-Yu Sun</a>
+							</li>
+							<li class="newsite-meta-item">
+								<a class="js-like" href="#">Like this site!</a>
+							</li>
+						</ul>
+					</li>
+					<li class="newsite-item">
+						<a class="newsite-link" href="http://shenyusun.com/websites/turn_on_light_bulb/index.html">Website 2 - Turn On Light Bulb</a>
+						<ul class="newsite-meta">
+							<li class="newsite-meta-item">
+								<em>Made by:</em>
+								<a href="#">Shen-Yu Sun</a>
+							</li>
+							<li class="newsite-meta-item"> 
+								<a class="js-like" href="#">Like this site!</a>
+							</li>
+						</ul>
+					</li>
+					<li class="newsite-item">
+						<a class="newsite-link" href="http://shenyusun.com/websites/index.html">Website 1 - Homepage</a>
+						<ul class="newsite-meta">
+							<li class="newsite-meta-item">
+								<em>Made by:</em>
+								<a href="#">Shen-Yu Sun</a>
+							</li>
+							<li class="newsite-meta-item">
+								<a class="js-like" href="#">Like this site!</a>
+							</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+		</main>
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>			
+

@@ -1,0 +1,240 @@
+/**************************************************
+*
+*	Home Page Stylesheet
+*
+*	White								: #fff
+*	Indigo (dark)				: #303f9f
+*	Indigo							: #3f5lb5
+*	Light blue 					: #c5cae9
+* Pink 							  : #ff4081
+* Gray (dark)				  : #212121
+*	Gray (medium)				: #727272
+* Gray (light)			  : #b6b6b6
+*
+**************************************************/
+
+/*-------------------------------------------------
+*	Base
+-------------------------------------------------*/
+
+body {
+	color: #212121;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #996600;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+ol, ul {
+margin: 0;
+padding: 0;
+list-style-type: none;	
+}
+
+
+p {
+
+}
+
+a {
+	color: #ff4081;
+	transition: 0.2s ease-in-out;
+}
+
+a:active {}
+
+a:hover {
+	color: #ff4081;
+}
+
+a:focus {}
+/*-------------------------------------------------
+*	Header
+-------------------------------------------------*/
+
+.header {
+background-color: #fff;
+color: #996600;
+margin-bottom: 40px;
+padding: 20px 0;
+text-align:  center;
+border-bottom: 3px solid #cc9900;
+}
+
+/*-------------------------------------------------
+*	Logo
+-------------------------------------------------*/
+
+.logo {
+font-size: 34px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+/*-------------------------------------------------
+*	Sites
+-------------------------------------------------*/
+
+.newsite-item {
+border-bottom: 1px solid #b6b6b6;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.newsite-item:last-child {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.newsite-link {
+color: #3f5lb5;
+display: block;
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.newsite-meta-item {
+	display: inline;
+	margin-right: 15px;
+}
+
+/*-------------------------------------------------
+*	Container
+-------------------------------------------------*/
+
+.container {
+margin: 0 auto;
+max-width: 800px;
+}
+
+/*-------------------------------------------------
+*	Content
+-------------------------------------------------*/
+
+.content {
+	margin-bottom: 40px;
+}
+
+/*-------------------------------------------------
+*	States
+-------------------------------------------------*/
+
+.is-liked {
+	animation: flash 2s;
+}
+
+/*-------------------------------------------------
+*	Form
+-------------------------------------------------*/
+
+.form {
+	height: 0;
+	margin-bottom: 20px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.form.is-visible {
+	height: auto;
+	opacity: 1;
+	transition: 1s;
+	visibility: visible;
+}
+
+.form-label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.form-input {
+	border: 1px solid #b6b6b6;
+	border-radius: 10px;
+	box-sizing: border-box;
+	font-size: 20px;
+	padding: 10px;
+	width: 100%;
+}
+
+
+/*-----------------------------------------------
+*   Modal
+-----------------------------------------------*/
+
+.modal {
+	background-color: #fff;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+	left: 50%;
+	position: absolute;
+	top: 40px;
+	transform: translate(-50%, -5%);
+	width: 368px;
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s ease-in-out;
+}
+
+.modal.is-visible {
+	opacity: 1;
+	transform: translate(-50%, 0);
+	visibility: visible;
+}
+
+.modal-media {
+	position: relative;
+}
+
+.modal-media-title {
+	color: #fff;
+	bottom: 20px;
+	left: 20px;
+	font-size: 30px;
+	position:  absolute;
+}
+
+.modal-content {
+	padding: 20px;
+}
+
+.modal-overlay {
+	background-color: #212121;
+	height: 100%;	
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	opacity: 0;
+	z-index: 1;
+	visibility: hidden;
+	transition: 0.4s ease-in-out;
+}
+
+.modal-overlay.is-visible {
+	opacity: 0.4;
+	visibility: visible;
+}
+
+/*-------------------------------------------------
+*	Animation
+-------------------------------------------------*/
+
+@keyframes flash {
+	from, 50%, to {
+		opacity: 0;
+	}
+	25%, 75% {
+		opacity: 1;
+	}
+
+}
